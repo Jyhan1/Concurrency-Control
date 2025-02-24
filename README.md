@@ -22,8 +22,12 @@ use stock_example;
 docker pull redis
 docker run --name myredis -d -p 6379:6379 redis
 docker exec -it [redis-container-id] redis-cli
-### Redis TEST
+### Lettuce Test
 setnx 1 lock  
 setnx 1 lock  
 del 1  
 setnx 1 lock  
+
+### Redisson Test
+(Terminal 1) subscribe ch1
+(Terminal 2) publish ch1 hello
