@@ -16,3 +16,14 @@ docker exec -it mysql bash
 mysql -u root -p  
 create database stock_example;  
 use stock_example;  
+
+
+### Redis 설치 및 실행
+docker pull redis
+docker run --name myredis -d -p 6379:6379 redis
+docker exec -it [redis-container-id] redis-cli
+### Redis TEST
+setnx 1 lock  
+setnx 1 lock  
+del 1  
+setnx 1 lock  

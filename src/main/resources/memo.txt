@@ -1,0 +1,9 @@
+Lettuce
+ - setnx 명령어를 활용하여 분산락 구현
+ - spin lock 방식
+    * setnx : 데이터베이스에 동일한 key가 없을 경우에만 저장
+            사용법은 setnx key value
+
+Redisson
+ - pub-sub 기반으로 Lock 구현 제공
+ - 별도의 re-try 작성하지 않음
