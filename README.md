@@ -1,7 +1,5 @@
 # 동시성 문제 해결 방법
 
-## 적용한 동시성 제어 기법
-
 ### 1. **Synchronized**  
 - Java의 `synchronized` 키워드를 사용한 동기화 처리  
 
